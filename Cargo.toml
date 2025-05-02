@@ -1,0 +1,31 @@
+[workspace]
+resolver = "3"
+members = ["patricia-tree"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+authors = ["cffnpwr <cffnpwr@gmail.com>"]
+repository = "https://github.com/cffnpwr/deadman-rs.git"
+license-file = "LICENSE"
+rust-version = "1.85.0"
+
+[workspace.dependencies]
+anyhow = "1.0.98"
+thiserror = "2.0.12"
+
+[package]
+name = "common-lib"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+repository.workspace = true
+license-file.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+patricia-tree = { path = "patricia-tree", optional = true }
+
+[features]
+default = []
+patricia-tree = ["dep:patricia-tree"]
