@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = ["patricia-tree"]
+members = ["auto-impl-macro","patricia-tree"]
 
 [workspace.package]
 version = "0.1.0"
@@ -25,7 +25,9 @@ rust-version.workspace = true
 
 [dependencies]
 patricia-tree = { path = "patricia-tree", optional = true }
+auto-impl-macro = { path = "auto-impl-macro", optional = true }
 
 [features]
 default = []
 patricia-tree = ["dep:patricia-tree"]
+auto-impl-macro = ["dep:auto-impl-macro"]
