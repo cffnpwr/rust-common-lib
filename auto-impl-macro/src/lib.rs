@@ -6,7 +6,7 @@ use syn::{DeriveInput, parse_macro_input};
 
 use self::convert::generate_auto_try_from;
 
-#[proc_macro_derive(AutoTryFrom)]
+#[proc_macro_derive(AutoTryFrom, attributes(auto_try_from))]
 pub fn auto_try_from_derive(input: TokenStream) -> TokenStream {
     let input = parse_macro_input!(input as DeriveInput);
 
