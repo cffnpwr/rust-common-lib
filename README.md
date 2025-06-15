@@ -35,6 +35,7 @@ patricia-tree = { git = "https://github.com/cffnpwr/rust-common-lib.git" }
 ## ライブラリ一覧
 
 - `patricia-tree`: Patricia Treeの実装
+- `auto-impl-macro`: 複数のトレイトの実装に同一の実装を使用する際に使用するマクロ
 
 ## ライセンス
 
