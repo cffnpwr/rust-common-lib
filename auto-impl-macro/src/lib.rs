@@ -15,3 +15,5 @@ pub fn auto_try_from_derive(input: TokenStream) -> TokenStream {
         Err(err) => err.to_compile_error().into(),
     }
 }
+
+// proc_macroのテストは統合テストで行う
